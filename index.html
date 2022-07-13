@@ -36,31 +36,45 @@
 						
 						<div class="content">
 							<div class="inner">
-								<div class="calendar">
-								<div class="title">
-									<h1 class="green" id="calendar-title">Month</h1>
-									<h2 class="green small" id="calendar-year">Year</h2>
-									<a href="" id="prev">Prev Month</a>
-									<a href="" id="next">Next Month</a>
-								</div>
-								<div class="body">
-									<div class="lightgrey body-list">
-										<ul>
-											<li>MON</li>
-											<li>TUE</li>
-											<li>WED</li>
-											<li>THU</li>
-											<li>FRI</li>
-											<li>SAT</li>
-											<li>SUN</li>
-										</ul>
-									</div>
-									<div class="darkgrey body-list">
-										<ul id="days">
-										</ul>
-									</div>
-								</div>
-							</div>
+					<div class="calendar">
+                    <div class="calendar-header">
+            
+                        <div class="year-picker">
+                            <span class="year-change" id="prev-month">
+                                <pre><</pre>
+                            </span>
+                            <span id="year">2022</span>
+                            <span class="year-change" id="next-month">
+                                <pre>></pre>
+                            </span>
+                        </div>
+                        <br>
+                        <span class="month-picker" id="month-picker">February</span>
+                    </div>
+                    <div class="calendar-body">
+                        <div class="calendar-week-day">
+                            <div>日</div>
+                            <div>一</div>
+                            <div>二</div>
+                            <div>三</div>
+                            <div>四</div>
+                            <div>五</div>
+                            <div>六</div>
+                        </div>
+                        <div class="calendar-days"></div>
+                    </div>
+                    <!-- <div class="calendar-footer">
+                        <div class="toggle">
+                            <span>深色模式</span>
+                            <div class="dark-mode-switch">
+                                <div class="dark-mode-switch-ident"></div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="month-list"></div>
+                </div>
+            
+                <script src="assets/js/calendar.js"></script>
 							</div>
 						</div>
 						<nav>
