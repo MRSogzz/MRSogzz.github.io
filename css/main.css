@@ -21,13 +21,15 @@
                 height: 80vh;
                 display: grid;
                 place-items: center;
-                background-color: rgb(225, 225, 225);
+                background-image:url('../image/back.jpg');
+				background-position: center;
+				background-size: cover;
             }
             
             .calendar {
                 height: 500px;
                 width: 500px;
-                background-color: rgb(116, 116, 116);
+                background:rgba(0,0,0,0.1);
                 border-radius: 30px;
                 padding: 20px;
                 position: relative;
@@ -137,21 +139,62 @@
             }
 			
 /* test */
-	.demo1{
-		overflow:hidden;
-		height:118px;
-	}
-	.box1
-	{
-		background: #eee;
-		padding: 10px 0;
-		white-space:nowrap;
-		overflow-y:auto;
-	}
-	.Box{
-		width:49%;
-		margin-left:3%;
-		height:100px;
-		background:#fff;
-		display:inline-block;
-	}
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.fl{
+	float: left;
+}
+.clearfix{
+	zoom: 1;
+}
+.clearfix:after{
+	display: block;
+	overflow: hidden;
+	content: '';
+	clear: both;
+	height: 0;
+}
+.outer{
+	margin: 10px;
+}
+.slide{
+	width: 300px;
+	height: 30px;
+	border: 1px solid #ddd;
+	position: relative;
+	overflow: hidden;
+	display: inline-block;
+}
+.inner{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 720px;
+	cursor: pointer;
+	transition: all .3s ease;
+}
+.inner li{
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+	background: yellow;
+	float: left;
+	text-align: center;
+	line-height: 20px;
+	font-size: 12px;
+	color: purple;
+	user-select: none;
+}
+a{
+	display: inline-block;
+	line-height: 32px;
+	margin: 0 10px;
+	cursor: pointer;
+	color: #666;
+}
+a:hover{
+	color: red;
+}
