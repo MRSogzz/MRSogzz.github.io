@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-Hant" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, follow">
+    <title>AI & Quantitative Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght=600;700;800&family=Noto+Sans+TC:wght=300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="h-full">
+    <div id="app" class="w-full h-full bg-gradient-to-br from-[#0f0f1e] via-[#1a1a2e] to-[#16213e] text-[#e0e0e0] overflow-auto">
+        
+        <div class="fixed inset-0 pointer-events-none overflow-hidden z-0">
+            <div class="absolute top-20 right-1/4 w-96 h-96 bg-indigo-500/10 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-40 left-1/4 w-72 h-72 bg-purple-500/5 rounded-full blur-3xl"></div>
+        </div>
+
+        <nav class="fixed top-0 left-0 right-0 z-50 bg-[#0f0f1e]/80 backdrop-blur-xl border-b border-indigo-500/15">
+            <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+                <div class="text-lg font-bold display-font tracking-wide bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                    MRSogzz<span>.dev</span>
+                </div>
+                <div class="flex gap-6 text-sm">
+                    <a href="#skills" class="text-[#e0e0e0] hover:text-indigo-400 transition duration-300">技能</a>
+                    <a href="#projects" class="text-[#e0e0e0] hover:text-indigo-400 transition duration-300">作品</a>
+                    <a href="#experience" class="text-[#e0e0e0] hover:text-indigo-400 transition duration-300">經歷</a>
+                    <a href="#contact" class="text-[#e0e0e0] hover:text-indigo-400 transition duration-300">聯絡</a>
+                </div>
+            </div>
+        </nav>
+
+        <section class="relative pt-44 pb-24 px-6 hero-card z-10">
+            <div class="max-w-5xl mx-auto hero-card-inner">
+                <p class="text-xs text-indigo-400 mb-3 font-medium tracking-widest uppercase">AI & Quantitative Engineering Portfolio</p>
+                <h1 id="heroName" class="text-5xl md:text-7xl font-bold display-font text-transparent bg-clip-text bg-gradient-to-r from-indigo-200 via-purple-200 to-indigo-100 mb-3 glow-text"></h1>
+                <h2 id="heroTitle" class="text-xl md:text-2xl font-light text-indigo-200 mb-6"></h2>
+                <p id="heroTagline" class="max-w-2xl text-base text-gray-300 leading-relaxed"></p>
+                <div class="mt-10 flex gap-4">
+                    <a href="#projects" class="px-6 py-2.5 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-lg font-semibold hover:shadow-lg hover:shadow-indigo-500/40 transition duration-300 text-sm">查看精選作品</a>
+                    <a id="navResumeLink" href="" download class="px-6 py-2.5 border border-purple-400/60 text-purple-300 rounded-lg font-semibold hover:bg-purple-500/10 transition duration-300 text-sm flex items-center gap-2">
+                        <i data-lucide="file-text" class="w-4 h-4"></i>下載履歷 PDF
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-20 px-6 relative z-10 max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold display-font text-white mb-2">專業核心技能</h2>
+            <p class="text-gray-400 mb-12 text-sm">Technical Skills Portfolio</p>
+            <div id="skillsContainer" class="grid md:grid-cols-2 gap-6">
+                </div>
+        </section>
+
+        <section id="projects" class="py-20 px-6 relative z-10 max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold display-font text-white mb-2">精選專案作品</h2>
+            <p class="text-gray-400 mb-12 text-sm">Selected Open Source Projects</p>
+            <div id="projectsContainer" class="space-y-6">
+                </div>
+        </section>
+
+        <section id="experience" class="py-20 px-6 relative z-10 max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold display-font text-white mb-2">職涯與研究經歷</h2>
+            <p class="text-gray-400 mb-12 text-sm">Work & Research Experience</p>
+            <div id="experienceContainer" class="space-y-8 border-l-2 border-indigo-500/20 pl-6 ml-4">
+                </div>
+        </section>
+
+        <section id="contact" class="py-24 px-6 relative z-10 border-t border-indigo-500/10">
+            <div class="max-w-3xl mx-auto text-center">
+                <h2 class="text-3xl font-bold display-font text-white mb-4">聯絡我</h2>
+                <p class="text-gray-400 mb-10 text-sm">歡迎透過以下管道與我聯繫交流</p>
+                <div id="contactButtons" class="flex justify-center gap-4 flex-wrap">
+                    <a id="emailLink" href="" class="flex items-center gap-2.5 px-5 py-3 bg-gradient-to-r from-indigo-500 to-purple-500 text-white rounded-lg font-medium hover:shadow-lg hover:shadow-indigo-500/40 transition duration-300 text-sm">
+                        <i data-lucide="mail" class="w-4 h-4"></i>
+                        <span id="emailText"></span>
+                    </a>
+                    <a id="githubLink" href="" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 px-5 py-3 border border-indigo-400/70 text-indigo-300 rounded-lg font-medium hover:bg-indigo-500/10 transition duration-300 text-sm">
+                        <i data-lucide="github" class="w-4 h-4"></i>
+                        <span>GitHub Profile</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <footer class="py-8 px-6 border-t border-indigo-500/10 relative z-10 text-center">
+            <p class="text-xs text-gray-500">© 2026 — Designed & Developed with precision</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script>
+        function renderPortfolio() {
+            const data = portfolioData;
+
+            // 1. 渲染 Hero 區與個人基本資料
+            document.getElementById('heroName').textContent = data.profile.name;
+            document.getElementById('heroTitle').textContent = data.profile.title;
+            document.getElementById('heroTagline').textContent = data.profile.tagline;
+            document.getElementById('emailText').textContent = data.profile.email;
+            document.getElementById('emailLink').href = 'mailto:' + data.profile.email;
+            document.getElementById('githubLink').href = data.profile.github;
+            document.getElementById('navResumeLink').href = data.profile.resumeUrl;
+
+            // 2. 在底部聯絡區塊插入「下載完整履歷」按鈕
+            const contactButtons = document.getElementById('contactButtons');
+            if (contactButtons) {
+                contactButtons.insertAdjacentHTML('beforeend', `
+                    <a href="${data.profile.resumeUrl}" download class="flex items-center gap-2.5 px-5 py-3 border border-purple-400/70 text-purple-300 rounded-lg font-medium hover:bg-purple-500/10 transition duration-300 text-sm">
+                        <i data-lucide="file-text" class="w-4 h-4"></i>
+                        <span>下載完整履歷 (PDF)</span>
+                    </a>
+                `);
+            }
+
+            // 3. 渲染專業核心技能卡片 (升級為 3D 懸浮卡片結構)
+            const skillsContainer = document.getElementById('skillsContainer');
+            skillsContainer.innerHTML = data.skills.map(skill => `
+                <div class="hover-card-container">
+                    <div class="hover-tilt-card bg-gradient-to-br from-indigo-950/40 to-slate-900/60 border border-indigo-500/15 rounded-xl p-6 md:p-7 overflow-hidden">
+                        <div class="flex items-center gap-4 mb-4 relative z-10">
+                            <div class="w-11 h-11 rounded-xl bg-indigo-500/15 flex items-center justify-center border border-indigo-500/20 shadow-inner">
+                                <i data-lucide="${skill.icon}" class="w-5 h-5 text-indigo-400"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-white tracking-wide">${skill.title}</h3>
+                        </div>
+                        <p class="text-gray-400 text-sm leading-relaxed relative z-10 font-light">${skill.description}</p>
+                    </div>
+                </div>
+            `).join('');
+
+            // 4. 監聽滑鼠事件以計算 3D 傾斜與局部 Spotlight 發光效果
+            const tiltCards = document.querySelectorAll('.hover-tilt-card');
+            tiltCards.forEach(card => {
+                card.addEventListener('mousemove', (e) => {
+                    const rect = card.getBoundingClientRect();
+                    const x = e.clientX - rect.left; // 滑鼠在卡片內的 X 座標
+                    const y = e.clientY - rect.top;  // 滑鼠在卡片內的 Y 座標
+                    
+                    // 計算傾斜角度 (最大正負 8 度，保持優雅平衡)
+                    const tiltX = ((y / rect.height) - 0.5) * -16;
+                    const tiltY = ((x / rect.width) - 0.5) * 16;
+                    
+                    // 將變數傳入 CSS
+                    card.style.setProperty('--mouse-x', `${x}px`);
+                    card.style.setProperty('--mouse-y', `${y}px`);
+                    card.style.transform = `rotateX(${tiltX}deg) rotateY(${tiltY}deg) translateY(-4px)`;
+                });
+                
+                // 滑鼠離開時平滑復原
+                card.addEventListener('mouseleave', () => {
+                    card.style.transform = 'rotateX(0deg) rotateY(0deg) translateY(0px)';
+                });
+            });
+
+            // 5. 渲染專案卡片 (針對 Wan2.1 768x1024 垂直比例優化)
+            const projectsContainer = document.getElementById('projectsContainer');
+            projectsContainer.innerHTML = data.projects.map(project => {
+                const pointsHtml = project.bulletPoints.map(point => `<li>${point}</li>`).join('');
+                
+                if (project.demo) {
+                    return `
+                        <div class="project-card bg-gradient-to-r from-indigo-950/30 to-slate-900/50 border border-indigo-500/15 rounded-xl p-6 md:p-8 hover:border-indigo-400/40 transition duration-300">
+                            <div class="grid lg:grid-cols-5 gap-6">
+                                <div class="lg:col-span-3">
+                                    <div class="flex items-center gap-3 mb-4 flex-wrap">
+                                        <h3 class="text-xl font-bold text-white">${project.title}</h3>
+                                        <a href="${project.githubUrl}" target="_blank" class="text-indigo-400 hover:text-indigo-300 text-xs flex items-center gap-1 bg-indigo-500/10 px-2 py-0.5 rounded border border-indigo-500/20">
+                                            <i data-lucide="github" class="w-3 h-3"></i> Repository
+                                        </a>
+                                    </div>
+                                    <div class="text-xs font-mono text-indigo-300 bg-indigo-500/5 inline-block px-2.5 py-1 rounded border border-indigo-500/15 mb-4">
+                                        ${project.techStack}
+                                    </div>
+                                    <ul class="list-disc pl-5 text-gray-400 text-sm space-y-2">
+                                        ${pointsHtml}
+                                    </ul>
+                                </div>
+                                <div class="lg:col-span-2 flex flex-col gap-3 justify-center">
+                                    <div class="grid grid-cols-2 gap-2">
+                                        <div class="relative bg-slate-900/80 border border-slate-700 rounded-lg overflow-hidden h-56 sm:h-64">
+                                            <img src="${project.demo.sourceImg}" alt="Input Source" class="w-full h-full object-cover object-center">
+                                            <span class="absolute bottom-1 left-1 bg-black/70 text-[10px] px-1.5 py-0.5 rounded text-gray-300 font-medium">Input Image</span>
+                                        </div>
+                                        <div class="relative bg-slate-900/80 border border-indigo-500/30 rounded-lg overflow-hidden h-56 sm:h-64 shadow-md shadow-indigo-500/10">
+                                            <video class="w-full h-full object-cover object-center" autoplay loop muted playsinline>
+                                                <source src="${project.demo.resultVideo}" type="video/mp4">
+                                            </video>
+                                            <span class="absolute bottom-1 left-1 bg-indigo-600/90 text-[10px] px-1.5 py-0.5 rounded text-white font-medium flex items-center gap-1">
+                                                <i data-lucide="play" class="w-2 h-2 fill-current"></i> Demo Result
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <p class="text-[11px] text-gray-500 text-center italic">${project.demo.caption}</p>
+                                </div>
+                            </div>
+                        </div>
+                    `;
+                } else {
+                    return `
+                        <div class="project-card bg-gradient-to-r from-indigo-950/30 to-slate-900/50 border border-indigo-500/15 rounded-xl p-6 md:p-8 hover:border-indigo-400/40 transition duration-300">
+                            <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+                                <div class="flex items-center gap-3">
+                                    <h3 class="text-xl font-bold text-white">${project.title}</h3>
+                                    <a href="${project.githubUrl}" target="_blank" class="text-indigo-400 hover:text-indigo-300 text-xs flex items-center gap-1 bg-indigo-500/10 px-2 py-0.5 rounded border border-indigo-500/20">
+                                        <i data-lucide="github" class="w-3 h-3"></i> Repository
+                                    </a>
+                                </div>
+                                <span class="text-xs font-mono text-gray-400 bg-slate-800/80 px-3 py-1 rounded-md border border-slate-700">${project.techStack}</span>
+                            </div>
+                            <ul class="list-disc pl-5 text-gray-400 text-sm space-y-2">
+                                ${pointsHtml}
+                            </ul>
+                        </div>
+                    `;
+                }
+            }).join('');
+
+            // 6. 渲染經歷時間軸
+            const expContainer = document.getElementById('experienceContainer');
+            if (expContainer && data.experience) {
+                expContainer.innerHTML = data.experience.map(exp => `
+                    <div class="relative group">
+                        <div class="absolute -left-[33px] top-1.5 w-4 h-4 rounded-full bg-[#0f0f1e] border-2 border-indigo-400 group-hover:bg-indigo-400 transition duration-300"></div>
+                        <span class="text-xs font-mono text-indigo-400 font-semibold">${exp.period}</span>
+                        <h3 class="text-lg font-bold text-white mt-1">${exp.role}</h3>
+                        <p class="text-sm text-gray-400 font-medium mb-2">${exp.company}</p>
+                        <p class="text-sm text-gray-400 leading-relaxed max-w-3xl">${exp.description}</p>
+                    </div>
+                `).join('');
+            }
+
+            // 7. 動態生成與渲染所有圖標
+            lucide.createIcons();
+        }
+
+        // 啟動渲染
+        document.addEventListener('DOMContentLoaded', renderPortfolio);
+    </script>
+</body>
+</html>
