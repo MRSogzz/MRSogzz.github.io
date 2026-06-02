@@ -18,6 +18,6 @@
 ├── style.css           # 3D 懸浮、Spotlight 光暈與全域動畫樣式
 ├── data.js            # 核心資料層 (維護網頁內容、專案、經歷只需修改此檔案)
 └── assets/             # 靜態多媒體資源庫
-    ├── wan-source.jpg  # Wan2.1 輸入原圖
-    ├── wan-result.mp4 # Wan2.1 I2V 影片生成結果 Demo
+    ├── wan-source.jpg  # Wan2.2 輸入原圖
+    ├── wan-result.mp4 # Wan2.2 I2V 影片生成結果 Demo
     └── Resume.pdf      # 完整版個人專業履歷檔案

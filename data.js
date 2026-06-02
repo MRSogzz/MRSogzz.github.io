@@ -1,8 +1,8 @@
 const portfolioData = {
     // 個人基本資訊
     profile: {
-        name: "MRSogzz",
-        title: "AI & 量化金融工程師 (AI & Quantitative Engineer)",
+        name: "JasonShen",
+        title: "AI & 量化工程師 (AI & Quantitative Engineer)",
         tagline: "專注於深度強化學習與量化投資，建構兼具高模組化架構與高擬真回測之自動化交易系統；同時深耕生成式 AI 地端優化，打造流暢的本地化推論環境。",
         email: "MRSogzz@gmail.com",
         github: "https://github.com/MRSogzz",
